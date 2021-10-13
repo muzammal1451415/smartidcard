@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/_20sdp"
+    tools:context=".DeleteUser">
+    <TextView
+        android:id="@+id/text_screen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorOnPrimary"
+        android:textSize="@dimen/large"
+        android:text="Delete User"></TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_username"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:helperTextTextColor="@color/colorRed"
+        app:hintTextColor="@color/colorDarkGrey"
+        android:hint="Enter Username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/colorLightGrey" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Next"
+        android:onClick="onClickNext"
+        android:layout_marginTop="@dimen/_10sdp"
+        style="@style/Widget.App.Button"
+        />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:src="@drawable/logo" />
+    <Button
+        android:id="@+id/buttonAdmin"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Admin"
+        android:onClick="onClickAdmin"
+        android:layout_marginTop="@dimen/_40sdp"
+        style="@style/Widget.App.Button"
+        />
+    <Button
+        android:id="@+id/buttonStudent"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Student"
+        android:onClick="onClickStudent"
+        android:layout_marginTop="@dimen/_20sdp"
+        style="@style/Widget.App.Button"
+        />
+
+</LinearLayout>

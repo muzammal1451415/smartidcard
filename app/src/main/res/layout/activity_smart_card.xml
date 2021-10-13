@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_20sdp"
+    android:paddingRight="@dimen/_20sdp"
+    android:gravity="center_horizontal"
+    tools:context=".AdminLogin">
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/logo" />
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/ic_baseline_qr_code_24"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nicole Kempis"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_30sdp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student ID: STD009088389"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Issue: 13/Aug/2021"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        ></TextView>
+</LinearLayout>

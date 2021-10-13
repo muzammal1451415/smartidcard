@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_20sdp"
+    android:paddingRight="@dimen/_20sdp"
+    android:gravity="center_horizontal"
+    tools:context=".UserOperations">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/buttonLogout"
+            style="@style/Widget.App.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:onClick="onClickLogout"
+            android:text="Logout" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:src="@drawable/logo" />
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/add_user"
+        android:layout_marginTop="@dimen/_20sdp"></ImageView>
+    <Button
+        android:id="@+id/buttonUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Add User Profile"
+        style="@style/Widget.App.Button"
+        android:onClick="onClickAddUserProfile"
+        />
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/edit_user"
+        android:layout_marginTop="@dimen/_20sdp"></ImageView>
+    <Button
+        android:id="@+id/buttonEditUser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Edit User Profile"
+        android:onClick="onClickEditUserProfile"
+        style="@style/Widget.App.Button"
+        />
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/delete_user"
+        android:layout_marginTop="@dimen/_20sdp"></ImageView>
+    <Button
+        android:id="@+id/buttonDeleteUser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:onClick="onClickDeleteUserProfile"
+        android:text="Delete User Profile"
+        style="@style/Widget.App.Button"
+        />
+</LinearLayout>
